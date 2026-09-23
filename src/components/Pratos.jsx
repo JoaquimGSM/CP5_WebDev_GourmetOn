@@ -1,29 +1,39 @@
+import { useState, useEffect } from "react"
 import CardComida from "./CardComida"
+import buscarComidas from "../services/comidasApi"
+
+
 
 const Pratos = () => {
-  return (
-    <section id="pratos">
-      <h2>Pratos</h2>
 
-      <div>
+  const [comidas, setComidas] = useState([])
+
+  useEffect(() => {
+      const carregarComidas = async () => {
+        const dados = await buscarComidas(3)
+
+        setComidas(dados.recipes)
+      }
+
+      carregarComidas()
+  }, [])
+
+  return (
+  <section id="pratos">
+    <h2>Pratos</h2>
+
+    <div>
+      {comidas.map((comida) => (
         <CardComida
-          nome="Pizza"
-          imagem="https://via.placeholder.com/300"
-          descricao="Pizza preparada com ingredientes selecionados."
+          key={comida.id}
+          nome={comida.title}
+          imagem={comida.image}
+          descricao={comida.summary}
         />
-        <CardComida
-          nome="Hambúrguer"
-          imagem="https://via.placeholder.com/300"
-          descricao="Hambúrguer artesanal com diferentes opções de acompanhamento."
-        />
-        <CardComida
-          nome="Massa"
-          imagem="https://via.placeholder.com/300"
-          descricao="Massas para diferentes gostos e ocasiões."
-        />
-      </div>
-    </section>
-  )
+      ))}
+    </div>
+  </section>
+)
 }
 
 export default Pratos
