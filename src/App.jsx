@@ -6,6 +6,7 @@ import Funcionalidades from './components/Funcionalidades'
 import Pratos from "./components/Pratos"
 import Depoimentos from "./components/Depoimentos"
 import Contato from "./components/Contato"
+import Footer from "./components/Footer"
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
       <Pratos />
       <Depoimentos />
       <Contato />
+      <Footer />
     </div>
   )
 }
