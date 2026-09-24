@@ -7,6 +7,7 @@ A aplicação permite explorar diferentes opções de pratos utilizando dados fo
 ## Integrantes
 
 - Joaquim Gaspardo Souza Moura — RM 572208
+- Felipe Rorato Costa - RM 570419
 - Felipe Kenji Takata — RM 568739
 - Gabriel Ferreira Flausino — RM 572486
 - Gustavo Ducatti — RM 570932
