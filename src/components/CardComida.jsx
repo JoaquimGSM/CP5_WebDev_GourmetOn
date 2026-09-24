@@ -5,7 +5,7 @@ const CardComida = ({ nome, imagem, descricao }) => {
   }
 
   return (
-    <div className="bg-white rounded-[2rem] overflow-hidden shadow-md w-full sm:w-[46%] lg:w-[30%] odd:-rotate-1 even:rotate-1 md:even:translate-y-6 hover:rotate-0 hover:translate-y-0 transition duration-300">
+    <div className="bg-white rounded-2xl overflow-hidden shadow-md w-full sm:w-[46%] lg:w-[30%] odd:-rotate-1 even:rotate-1 md:even:translate-y-6 hover:rotate-0 hover:translate-y-0 transition duration-300">
       <img src={imagem} alt={nome} className="w-full h-52 object-cover"/>
       <div className="p-6">
         <h3 className="text-xl font-bold text-[#2B1B14] mb-3">{nome}</h3>

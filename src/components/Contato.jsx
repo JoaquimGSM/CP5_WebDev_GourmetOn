@@ -8,7 +8,7 @@ const Contato = () => {
           <p className="text-stone-600 mt-4">Deixe seus dados e fique por dentro das novidades do GourmetOn.</p>
         </div>
 
-        <form className="bg-white rounded-[2rem] p-7 shadow-md w-full md:w-2/3">
+        <form className="bg-white rounded-2xl p-7 shadow-md w-full md:w-2/3">
           <div className="mb-5">
             <label htmlFor="nome" className="block font-semibold text-[#2B1B14] mb-2">Nome</label>
             <input type="text" id="nome" className="w-full bg-orange-50 border border-orange-200 rounded-xl px-4 py-3 outline-none focus:border-[#E86A33]"/>

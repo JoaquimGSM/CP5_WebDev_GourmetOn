@@ -24,7 +24,7 @@ const Pratos = () => {
           <p className="text-stone-600 mt-3">Escolha quantos pratos você quer descobrir.</p>
         </div>
 
-        <div className="bg-[#E86A33] rounded-[2rem] p-5 max-w-md mb-16 flex items-center gap-3">
+        <div className="bg-[#E86A33] rounded-2xl p-5 max-w-md mb-16 flex items-center gap-3">
           <input type="number" min="1" max="10" value={quantidade} onChange={(evento) => setQuantidade(parseInt(evento.target.value))} className="w-24 bg-white rounded-xl px-4 py-3 outline-none text-[#2B1B14]"/>
           <button onClick={carregarComidas} className="bg-[#341B12] text-white px-5 py-3 rounded-xl font-semibold hover:bg-stone-700 transition"><i className="fa-solid fa-magnifying-glass mr-2"></i>Buscar pratos</button>
         </div>
