@@ -65,7 +65,7 @@ O projeto utiliza a Spoonacular API para buscar informações sobre diferentes p
 Para executar o projeto, crie um arquivo `.env.local` na raiz:
 
 ```env
-VITE_SPOONACULAR_API_KEY=SUA_CHAVE_AQUI
+VITE_SPOONACULAR_API_KEY=hv793hf6y9hf...
 ```
 
 O arquivo `.env.example` mostra a variável necessária sem expor a chave da API.
