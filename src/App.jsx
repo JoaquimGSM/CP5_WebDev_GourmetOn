@@ -1,3 +1,4 @@
+import fundo from "./assets/fundo_GourmetOn.png"
 import Header from "./components/Header"
 import Hero from "./components/Hero"
 import Apresentacao from "./components/Apresentacao"
@@ -10,8 +11,14 @@ import Footer from "./components/Footer"
 function App() {
   return (
     <>
-      <Header/>
-      <Hero/>
+      <div
+        style={{ backgroundImage: `url(${fundo})`, backgroundPosition: "right top", backgroundSize: "cover", backgroundRepeat: "no-repeat" }}
+        className="min-h-screen bg-[#F5EEE5]"
+      >
+        <Header/>
+        <Hero/>
+      </div>
+
       <Apresentacao/>
       <Funcionalidades/>
       <Pratos/>
