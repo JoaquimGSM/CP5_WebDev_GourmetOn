@@ -1,6 +1,6 @@
 const Hero = () => {
   return (
-    <section id="inicio" className="px-6 pt-16 pb-24">
+    <section id="inicio" className="px-6 pt-60 pb-26">
       <div className="max-w-7xl mx-auto">
         <div className="max-w-3xl bg-white/95 rounded-[3rem] shadow-xl p-8 md:p-14">
           <p className="text-[#D86F45] font-bold mb-3">Delivery do seu jeito</p>
